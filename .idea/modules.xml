@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/take-out-food.iml" filepath="$PROJECT_DIR$/.idea/modules/take-out-food.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/take-out-food_main.iml" filepath="$PROJECT_DIR$/.idea/modules/take-out-food_main.iml" group="take-out-food" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/take-out-food_test.iml" filepath="$PROJECT_DIR$/.idea/modules/take-out-food_test.iml" group="take-out-food" />
+    </modules>
+  </component>
+</project>

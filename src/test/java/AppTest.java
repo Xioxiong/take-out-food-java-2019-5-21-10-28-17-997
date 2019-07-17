@@ -3,13 +3,36 @@
  */
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
 public class AppTest {
+
+    @Test
+    public void input() {
+        String str1;
+        String str2 = null;
+        int i=0;
+        Scanner sca = new Scanner(System.in);
+        //List<String> inputs = Arrays.asList("ITEM0001 x 1", "ITEM0013 x 2", "ITEM0022 x 1");
+        List<String> inputs = new ArrayList<String>();
+       //while (sca.hasNext()){
+           System.out.println("请输入菜品名称：");
+           str1 = sca.next();
+           System.out.println("请输入数量：");
+           i = sca.nextInt();
+           str2 = str1 +"*"+ i ;
+          inputs.add(str2);
+       //}
+        sca.close();
+        App app = new App(new ItemRepositoryTestImpl(), new SalesPromotionRepositoryTestImpl());
+        String receiptString = app.bestCharge(inputs);
+    }
     @Test
     public void should_use_50_percentage_sales_promotion(){
         List<String> inputs = Arrays.asList("ITEM0001 x 1", "ITEM0013 x 2", "ITEM0022 x 1");
